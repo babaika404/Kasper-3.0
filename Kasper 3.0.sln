@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kasper 3.0", "Kasper 3.0.csproj", "{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorSlider", "D:\ColorSlider\ColorSlider\ColorSlider.csproj", "{16E224DC-7FF0-4908-8318-D6A3AC2E797A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E224DC-7FF0-4908-8318-D6A3AC2E797A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E224DC-7FF0-4908-8318-D6A3AC2E797A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E224DC-7FF0-4908-8318-D6A3AC2E797A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E224DC-7FF0-4908-8318-D6A3AC2E797A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1BDA816-268E-49B5-B96D-82C545DFB0C9}
+	EndGlobalSection
+EndGlobal

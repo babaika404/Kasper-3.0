@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EF80D0CF-3865-4132-AD1B-4C261CD7C20E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kasper_3._0</RootNamespace>
+    <AssemblyName>Kasper 3.0</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bass.Net">
+      <HintPath>D:\bassNet\standard\Bass.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cs\BassLike.cs" />
+    <Compile Include="DrawingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DrawingForm.Designer.cs">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogInForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogInForm.Designer.cs">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusicForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusicForm.Designer.cs">
+      <DependentUpon>MusicForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Registr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registr.Designer.cs">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrainForm.Designer.cs">
+      <DependentUpon>TrainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UndergroundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UndergroundForm.Designer.cs">
+      <DependentUpon>UndergroundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vars.cs" />
+    <EmbeddedResource Include="DrawingForm.resx">
+      <DependentUpon>DrawingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogInForm.resx">
+      <DependentUpon>LogInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusicForm.resx">
+      <DependentUpon>MusicForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registr.resx">
+      <DependentUpon>Registr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrainForm.resx">
+      <DependentUpon>TrainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UndergroundForm.resx">
+      <DependentUpon>UndergroundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3aNC.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Q0X.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4Q0S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Inked4Q0S.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UDDD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7sYl.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AksR.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSNw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OSNw1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7VA.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2zFo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play-free-icon-font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop-free-icon-font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-dots-vertical-free-icon-font.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\ColorSlider\ColorSlider\ColorSlider.csproj">
+      <Project>{16E224DC-7FF0-4908-8318-D6A3AC2E797A}</Project>
+      <Name>ColorSlider</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5Vs.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McDn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\298L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7o1u.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VBuM.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\J43I.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5j4F.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\McDn1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Nbu5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D9FM.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7V0.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7Sv5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7SvD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KMH1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\S36A.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7gnB.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ApiG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QiTt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hihj.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6Jb2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5Vs1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U57u.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7SvD1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7Sv51.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G1JO.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9ZFU.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7U4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dtph.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WmD.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BNW5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UDDD1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\01d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\01n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\02d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\02n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\03d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\03n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\04d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\04n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\09d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\09n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\10d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\10n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\11d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\11n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\13d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\13n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\50d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\50n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\D1iW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dfrz.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZWdx.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
